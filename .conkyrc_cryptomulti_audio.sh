@@ -1,5 +1,6 @@
 #!/bin/bash
-LOCKFILE="/home/hiro/.conky/multicrypto/audio_lock.lock"
+HOMENAME = "$HOME"
+LOCKFILE= "HOMENAME/.conky/multicrypto/audio_lock.lock"
 
 while [ -f "$LOCKFILE" ]; do
     sleep 0.2
