@@ -1,0 +1,97 @@
+conky.config = {
+	alignment = 'top_middle',
+	background = true,
+	border_inner_margin = 5,
+	border_outer_margin = 0,
+	border_width = 0,
+	color0 = 'ca1a8b';
+	color1 = 'add8e6',
+	color2 = 'ffe595',
+	color3 = 'orange',
+	color4 = 'red',
+	color5 = 'badbad',--0068c8
+	color6 = 'green',
+	color7 = 'FFDEAD',
+ 	color8 = '1e90ff',--dodgerblue
+	color9 = 'yellow';
+	cpu_avg_samples = 2,
+	default_color = 'white',
+--default_graph_size 15 40
+	default_outline_color = '#000000',
+	default_shade_color = '#000000',
+	double_buffer = true,
+	draw_borders = false,
+	draw_graph_borders = false,
+	draw_outline = false,-- amplifies text if yes
+	draw_shades = false,
+	extra_newline = false,
+	font = 'URW Gothic L:size=8',
+--font = 'Roboto:size=10',
+	gap_x = -120,-- l|r      20 is default, 3190 tre schermi
+	gap_y = 180,-- u|d      10 is default
+	imlib_cache_size = 0,
+	maximum_width = 350,
+--minimum_size = 350,
+	minimum_height = 70,
+	minimum_width = 300,
+	net_avg_samples = 2,
+	no_buffers = true,
+	out_to_console = false,
+	out_to_stderr = false,
+	override_utf8_locale = true,
+	own_window = true,
+	own_window_argb_visual = true,
+	own_window_argb_value = 200,
+	own_window_class = 'Conky',
+--own_window_class = 'Conky-semi',
+--own_window_colour = '#000000',
+	own_window_hints = 'undecorated,below,skip_taskbar,skip_pager',
+--own_window_title = '4_Moon Teo Style',
+	own_window_transparent = false,
+--own_window_type = 'desktop',     --normal, desktop, dock, panel or override
+	own_window_type = 'normal',
+	pad_percents = 2,
+	short_units = true,
+	show_graph_range = true,
+	show_graph_scale = true,
+	stippled_borders = 5,
+--total_run_times 0,
+	update_interval = 10,
+	uppercase = false,-- set to yes if you want all text to be in uppercase
+	use_spacer = 'none',
+	use_xft = true,
+	xftalpha = 1.0,
+	
+}
+
+conky.text = [[
+########################################### load script Python
+${execpi 15 python ~/.conky/multicrypto/crypto_multialert.py}${if_existing /tmp/script_cryptomulti.lock}Loading...${else}${alignc}${color2}${font URW Gothic L:style=Bold:size=9}CONKY MULTI CRYPTO ALERTS${color}${font}${image $HOME/.conky/multicrypto/cryptologo.png -p 240,0 -s 16x16}${image $HOME/.conky/multicrypto/python_logo.png -p 260,0 -s 15x15}
+
+${execpi 10 sed -n '1p' $HOME/.conky/multicrypto/conky.txt}
+${execpi 10 sed -n '2p' $HOME/.conky/multicrypto/conky.txt}
+${execpi 10 sed -n '3p' $HOME/.conky/multicrypto/conky.txt}
+${execpi 10 sed -n '4p' $HOME/.conky/multicrypto/conky.txt}
+${execpi 10 sed -n '5p' $HOME/.conky/multicrypto/conky.txt}
+${execpi 10 sed -n '6p' $HOME/.conky/multicrypto/conky.txt}
+${execpi 10 sed -n '7p' $HOME/.conky/multicrypto/conky.txt}
+${execpi 10 sed -n '8p' $HOME/.conky/multicrypto/conky.txt}
+${execpi 10 sed -n '9p' $HOME/.conky/multicrypto/conky.txt}
+${execpi 10 sed -n '10p' $HOME/.conky/multicrypto/conky.txt}
+${execpi 10 sed -n '11p' $HOME/.conky/multicrypto/conky.txt}
+${execpi 10 sed -n '12p' $HOME/.conky/multicrypto/conky.txt}
+${execpi 10 sed -n '13p' $HOME/.conky/multicrypto/conky.txt}
+${execpi 10 sed -n '14p' $HOME/.conky/multicrypto/conky.txt}
+${execpi 10 sed -n '15p' $HOME/.conky/multicrypto/conky.txt}
+${execpi 10 sed -n '16p' $HOME/.conky/multicrypto/conky.txt}
+${execpi 10 sed -n '17p' $HOME/.conky/multicrypto/conky.txt}
+${execpi 10 sed -n '18p' $HOME/.conky/multicrypto/conky.txt}
+${execpi 10 sed -n '19p' $HOME/.conky/multicrypto/conky.txt}
+${execpi 10 sed -n '20p' $HOME/.conky/multicrypto/conky.txt}
+${execpi 10 sed -n '21p' $HOME/.conky/multicrypto/conky.txt}
+${execpi 10 sed -n '22p' $HOME/.conky/multicrypto/conky.txt}
+${execpi 10 sed -n '23p' $HOME/.conky/multicrypto/conky.txt}
+${execpi 10 sed -n '24p' $HOME/.conky/multicrypto/conky.txt}
+
+${color2}${hr 1}${endif}
+]];
