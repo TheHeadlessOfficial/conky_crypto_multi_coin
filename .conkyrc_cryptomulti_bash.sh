@@ -2,7 +2,7 @@
 
 HOMENAME = "$HOME"
 FLAG_FILE="$HOMENAME/.conky/multicrypto/-conky_user_data.flag"
-CONKY_CONFIG="/home/hiro/.conkyrc_cryptomulti"
+CONKY_CONFIG="$HOMENAME/.conkyrc_cryptomulti"
 
 cleanup() {
     echo "Executing cleanup..."
