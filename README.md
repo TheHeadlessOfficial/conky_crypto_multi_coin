@@ -3,6 +3,7 @@
 A conky (with a script written in Python) which sets 2 targets, one higher and one lower than the current price of a given crypto. When one of the two targets is reached, the conky emits a sound. Using [CoinLore API](https://www.coinlore.com/cryptocurrency-data-api#ticker) website.<br>
 
 <br>
+Inside the Coinlore website, you can search the symbol, the id, the name etc of the coins.
 <br>
 
 
