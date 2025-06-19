@@ -9,4 +9,4 @@ done
 touch "$LOCKFILE"
 ffplay -nodisp -autoexit "$1" > /dev/null 2>&1
 [ -f "$LOCKFILE" ] && rm "$LOCKFILE"
-#rm "$LOCKFILE"
+
