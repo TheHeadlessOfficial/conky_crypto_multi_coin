@@ -1,6 +1,7 @@
 #!/bin/bash
 
-FLAG_FILE="/home/hiro/.conky/multicrypto/-conky_user_data.flag"
+HOMENAME = "$HOME"
+FLAG_FILE="$HOMENAME/.conky/multicrypto/-conky_user_data.flag"
 CONKY_CONFIG="/home/hiro/.conkyrc_cryptomulti"
 
 cleanup() {
